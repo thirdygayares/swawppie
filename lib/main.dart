@@ -33,6 +33,34 @@ class test extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
+          Row(
+            children: <Widget>[
+              Column(
+                children: <Widget>[
+                  Container(
+                    padding: EdgeInsets.all(20.0),
+                    color: Color.fromARGB(255, 54, 54, 54),
+                    child: Text('one'),
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(20.0),
+                    color: Color.fromARGB(255, 54, 54, 54),
+                    child: Text('one'),
+                  ),
+                ],
+              ),
+              Container(
+                padding: EdgeInsets.all(20.0),
+                color: Colors.cyan,
+                child: Text('one'),
+              ),
+              Container(
+                padding: EdgeInsets.all(20.0),
+                color: Colors.cyan,
+                child: Text('one'),
+              ),
+            ],
+          ),
           Container(
             padding: EdgeInsets.all(20.0),
             color: Colors.cyan,
