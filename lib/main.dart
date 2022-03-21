@@ -29,10 +29,22 @@ class test extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 244, 67, 54),
       ),
-      body: Padding(
-        //bawal mabago ang color at margin neto
-        padding: EdgeInsets.all(90.0),
-        child: Text('hello'),
+      body: Row(
+        children: <Widget>[
+          Text('hello, world'),
+          TextButton(
+              onPressed: () {},
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
+              ),
+              child: Text('Click me')),
+          Container(
+            color: Colors.cyan,
+            padding: EdgeInsets.all(30.0),
+            child: Text('inside container'),
+          ),
+        ],
       ),
 
       floatingActionButton: FloatingActionButton(
