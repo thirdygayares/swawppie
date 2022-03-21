@@ -30,17 +30,11 @@ class test extends StatelessWidget {
         backgroundColor: Color.fromARGB(255, 244, 67, 54),
       ),
       body: Center(
-        child: Text(
-          'hello Thirdy',
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color: Colors.grey[600],
-            fontFamily: 'OpenSans',
-          ),
-        ),
-      ),
+          child: Image(
+        //pic from online
+        image: NetworkImage(
+            'https://images.unsplash.com/photo-1459802071246-377c0346da93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=709&q=80'),
+      )),
 
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
