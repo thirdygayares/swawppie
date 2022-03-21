@@ -16,6 +16,7 @@ void main() =>
       appBar: AppBar(
       title: Text('my First App'),
       centerTitle: true,
+      backgroundColor: Color.fromARGB(255, 244, 67, 54),
       ), 
     body: Center( 
       child: Text('hello Thirdy'),
