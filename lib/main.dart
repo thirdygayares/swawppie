@@ -32,9 +32,8 @@ class test extends StatelessWidget {
       body: Center(
           child: Image(
         //pic from online
-        image: NetworkImage(
-            'https://images.unsplash.com/photo-1459802071246-377c0346da93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=709&q=80'),
-      )),
+        image: AssetImage('images/banner/b1.png'),
+      ),),
 
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
