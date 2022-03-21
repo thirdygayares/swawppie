@@ -30,7 +30,9 @@ class test extends StatelessWidget {
         backgroundColor: Color.fromARGB(255, 244, 67, 54),
       ),
       body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
+          
           Text('hello, world'),
           TextButton(
               onPressed: () {},
