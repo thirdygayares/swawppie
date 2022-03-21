@@ -29,9 +29,16 @@ class test extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 244, 67, 54),
       ),
-      body: Center(
-        child: Image.asset('images/banner/b2.png'),
-        //or child: Image.network('url of image'),
+      body: Container(
+        //padding
+        // padding: EdgeInsets.all(20.0),
+        //padding: EdgeInsets.symmetric(horizontal: 130.0, vertical: 10.0),
+        padding: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 1.0),
+
+        //margin
+        margin: EdgeInsets.all(30.0),
+        color: Colors.grey[400],
+        child: Text('Hello World'),
       ),
 
       floatingActionButton: FloatingActionButton(
