@@ -15,7 +15,17 @@ void main() =>
       //appbar
       appBar: AppBar(
       title: Text('my First App'),
-      ),    
+      centerTitle: true,
+      ), 
+    body: Center( 
+      child: Text('hello Thirdy'),
+      ),
+
+    floatingActionButton: FloatingActionButton(
+      onPressed: () {},
+      child: Text('click'),
+    ),
+
     ),
 
   
