@@ -9,7 +9,17 @@ void main() =>
 
   //start of practice from the scratch
 
-  runApp(MaterialApp(home: Text('hey ninjas!,'),
+  runApp(MaterialApp(
+    //scaffold widget ? navbar
+    home: Scaffold(
+      //appbar
+      appBar: AppBar(
+      title: Text('my First App'),
+      ),    
+    ),
+
+  
+
 
   
   ));
