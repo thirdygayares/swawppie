@@ -29,22 +29,24 @@ class test extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 244, 67, 54),
       ),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          
-          Text('hello, world'),
-          TextButton(
-              onPressed: () {},
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
-                foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
-              ),
-              child: Text('Click me')),
           Container(
+            padding: EdgeInsets.all(20.0),
             color: Colors.cyan,
+            child: Text('one'),
+          ),
+          Container(
             padding: EdgeInsets.all(30.0),
-            child: Text('inside container'),
+            color: Colors.yellow,
+            child: Text('two'),
+          ),
+          Container(
+            padding: EdgeInsets.all(40.0),
+            color: Colors.blue,
+            child: Text('three'),
           ),
         ],
       ),
