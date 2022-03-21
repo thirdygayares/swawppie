@@ -63,16 +63,8 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   assets:
-   - images/banner/b1.png
-   - images/banner/b2.png
-   - images/banner/b3.png
-   - images/banner/b4.png
-   - images/banner/b5.jpg
-   - images/categories_icon/accessories.png
-   - images/categories_icon/appliances.png
-   - images/categories_icon/laptop.png
-   - images/categories_icon/mobile.png
-   - images/categories_icon/watches.png
+   - images/
+ 
 
    
 

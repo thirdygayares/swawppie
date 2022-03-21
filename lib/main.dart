@@ -30,10 +30,9 @@ class test extends StatelessWidget {
         backgroundColor: Color.fromARGB(255, 244, 67, 54),
       ),
       body: Center(
-          child: Image(
-        //pic from online
-        image: AssetImage('images/banner/b1.png'),
-      ),),
+        child: Image.asset('images/banner/b2.png'),
+        //or child: Image.network('url of image'),
+      ),
 
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
