@@ -19,12 +19,21 @@ void main() =>
       backgroundColor: Color.fromARGB(255, 244, 67, 54),
       ), 
     body: Center( 
-      child: Text('hello Thirdy'),
+      child: Text(
+        'hello Thirdy',
+        style: TextStyle(
+          fontSize: 20.0,
+          fontWeight: FontWeight.bold,
+          letterSpacing: 2.0,
+          color: Colors.grey[600],
+        ),
+        ),
       ),
 
     floatingActionButton: FloatingActionButton(
       onPressed: () {},
       child: Text('click'),
+      backgroundColor: Color.fromARGB(255, 244, 67, 54),
     ),
 
     ),
