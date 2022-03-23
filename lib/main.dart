@@ -30,7 +30,15 @@ class _ThirdyCardState extends State<ThirdyCard> {
         centerTitle: true,
       ),
       body: Column(
-        children: quotes.map((quote) => QuoteTemplate(quote: quote)).toList(),
+        children: quotes
+            .map((quote) => QuoteTemplate(
+                quote: quote,
+                delete: () {
+                  setState(() {
+                    quotes.remove(quote);
+                  });
+                }))
+            .toList(),
       ),
     );
   }
