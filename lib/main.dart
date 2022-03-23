@@ -32,13 +32,23 @@ class test extends StatelessWidget {
       body: Row(
         children: <Widget>[
           Expanded(
+            flex: 3,
             child: Container(
               padding: EdgeInsets.all(30.0),
-              color: Colors.cyan,
-              child: Text('1'),
+              child: Row(
+                children: <Widget>[
+                  Container(
+                    child: Text('thirdy'),
+                  ),
+                  Container(
+                    child: Text('jose'),
+                  ),
+                ],
+              ),
             ),
           ),
           Expanded(
+            flex: 2,
             child: Container(
               padding: EdgeInsets.all(30.0),
               color: Colors.yellow,
@@ -46,6 +56,7 @@ class test extends StatelessWidget {
             ),
           ),
           Expanded(
+            flex: 1,
             child: Container(
               padding: EdgeInsets.all(30.0),
               color: Colors.red,
