@@ -4,9 +4,15 @@ void main() => runApp(MaterialApp(
       home: ThirdyCard(),
     ));
 
-class ThirdyCard extends StatelessWidget {
+class ThirdyCard extends StatefulWidget {
   const ThirdyCard({Key? key}) : super(key: key);
 
+  @override
+  State<ThirdyCard> createState() => _ThirdyCardState();
+}
+
+class _ThirdyCardState extends State<ThirdyCard> {
+  int thirdy = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,6 +23,15 @@ class ThirdyCard extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            thirdy += 1;
+          });
+        },
+        child: Icon(Icons.add),
+        backgroundColor: Colors.grey[800],
+      ),
       body: Padding(
           padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
           child: Column(
@@ -24,7 +39,7 @@ class ThirdyCard extends StatelessWidget {
             children: <Widget>[
               Center(
                 child: CircleAvatar(
-                  backgroundImage: AssetImage('images/profile/jose.png'),
+                  // backgroundImage: AssetImage('images/profile/jose.png'),
                   radius: 40.0,
                 ),
               ),
@@ -69,7 +84,7 @@ class ThirdyCard extends StatelessWidget {
                 height: 10.0,
               ),
               Text(
-                'Pasig City',
+                '$thirdy',
                 style: TextStyle(
                   color: Colors.white,
                   letterSpacing: 2.0,
