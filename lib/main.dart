@@ -29,61 +29,28 @@ class test extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 244, 67, 54),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: Row(
         children: <Widget>[
-          Row(
-            children: <Widget>[
-              Column(
-                children: <Widget>[
-                  Container(
-                    padding: EdgeInsets.all(20.0),
-                    color: Color.fromARGB(255, 54, 54, 54),
-                    child: Text('one'),
-                  ),
-                  Container(
-                    padding: EdgeInsets.all(20.0),
-                    color: Color.fromARGB(255, 54, 54, 54),
-                    child: Text('one'),
-                  ),
-                ],
-              ),
-              Container(
-                padding: EdgeInsets.all(20.0),
-                color: Colors.cyan,
-                child: Text('one'),
-              ),
-              Container(
-                padding: EdgeInsets.all(20.0),
-                color: Colors.cyan,
-                child: Text('one'),
-              ),
-            ],
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.cyan,
+              child: Text('1'),
+            ),
           ),
-          Column(
-            children: [
-              Container(
-                padding: EdgeInsets.all(20.0),
-                color: Colors.cyan,
-                child: Text('thirdy'),
-              ),
-              Container(
-                padding: EdgeInsets.all(20.0),
-                color: Colors.cyan,
-                child: Text('four'),
-              ),
-            ],
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.yellow,
+              child: Text('2'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(30.0),
-            color: Colors.yellow,
-            child: Text('two'),
-          ),
-          Container(
-            padding: EdgeInsets.all(40.0),
-            color: Colors.blue,
-            child: Text('three'),
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.red,
+              child: Text('3'),
+            ),
           ),
         ],
       ),
