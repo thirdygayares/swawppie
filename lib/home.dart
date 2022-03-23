@@ -144,18 +144,19 @@ class _HomePageState extends State<HomePage> {
             padding: const EdgeInsets.all(0.0),
             child: Container(
               height: 25.0,
-              color:  Color.fromARGB(255, 22, 1, 97),
-              child: Container( 
+              color: Color.fromARGB(255, 22, 1, 97),
+              child: Container(
                 alignment: Alignment.center,
-                
-                child: Text('CATEGORY', style: TextStyle( 
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 15.0,
-                   ),
-                 ),
+                child: Text(
+                  'CATEGORY',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15.0,
+                  ),
                 ),
               ),
+            ),
           ),
 
           //Horizontal list view begins here
