@@ -61,10 +61,19 @@ class test extends StatelessWidget {
               ),
             ],
           ),
-          Container(
-            padding: EdgeInsets.all(20.0),
-            color: Colors.cyan,
-            child: Text('one'),
+          Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20.0),
+                color: Colors.cyan,
+                child: Text('thirdy'),
+              ),
+              Container(
+                padding: EdgeInsets.all(20.0),
+                color: Colors.cyan,
+                child: Text('four'),
+              ),
+            ],
           ),
           Container(
             padding: EdgeInsets.all(30.0),
