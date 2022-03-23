@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'quotes.dart';
 
 void main() => runApp(MaterialApp(
       home: ThirdyCard(),
@@ -12,10 +13,10 @@ class ThirdyCard extends StatefulWidget {
 }
 
 class _ThirdyCardState extends State<ThirdyCard> {
-  List<String> quotes = [
-    'Si thirdy ay pogi',
-    'Si thirdy ay matalino',
-    'si thirdy ay cute',
+  List<Quote> quotes = [
+    Quote(author: 'Thirdy Gayares', text: "ako ay pogi"),
+    Quote(author: 'Jose Gayares', text: "ako ay guwapo"),
+    Quote(author: 'max Gayares', text: "ako ay cute"),
   ];
 
   @override
@@ -28,7 +29,9 @@ class _ThirdyCardState extends State<ThirdyCard> {
         centerTitle: true,
       ),
       body: Column(
-        children: quotes.map((quotes) => Text(quotes)).toList(),
+        children: quotes
+            .map((quotes) => Text('${quotes.text} - ${quotes.author}'))
+            .toList(),
       ),
     );
   }
