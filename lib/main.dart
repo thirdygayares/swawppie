@@ -1,76 +1,108 @@
 import 'package:flutter/material.dart';
 
-//my own import
-//import 'home.dart';
-//import 'widget.dart';
-
-void main() =>
-    //runApp(MaterialApp(debugShowCheckedModeBanner: false, home: Practice()));
-
-    //start of practice from the scratch
-
-    runApp(MaterialApp(
-      //scaffold widget ? navbar
-      home: test(),
+void main() => runApp(MaterialApp(
+      home: ThirdyCard(),
     ));
 
-//REMEMBER STATELESS - cannot change every time
-//STATEFUL - change
-
-class test extends StatelessWidget {
-  const test({Key? key}) : super(key: key);
+class ThirdyCard extends StatelessWidget {
+  const ThirdyCard({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //appbar
+      backgroundColor: Color.fromARGB(255, 248, 61, 61),
       appBar: AppBar(
-        title: Text('my First App'),
+        title: Text('ThirdyGraphicsStudio'),
+        elevation: 0.0,
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 244, 67, 54),
+        backgroundColor: Colors.red[600],
       ),
-      body: Row(
-        children: <Widget>[
-          Expanded(
-            flex: 3,
-            child: Container(
-              padding: EdgeInsets.all(30.0),
-              child: Row(
+      body: Padding(
+          padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Center(
+                child: CircleAvatar(
+                  backgroundImage: AssetImage('images/profile/jose.png'),
+                  radius: 40.0,
+                ),
+              ),
+              Divider(
+                height: 60.0,
+                color: Colors.grey[800],
+              ),
+              Text(
+                'Name',
+                style: TextStyle(
+                  color: Colors.grey,
+                  letterSpacing: 2.0,
+                ),
+              ),
+              // adding space
+              SizedBox(
+                height: 10.0,
+              ),
+              Text(
+                'Thirdy',
+                style: TextStyle(
+                  color: Colors.white,
+                  letterSpacing: 2.0,
+                  fontSize: 28.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+
+              SizedBox(
+                height: 30.0,
+              ),
+
+              Text(
+                'Location',
+                style: TextStyle(
+                  color: Colors.grey,
+                  letterSpacing: 2.0,
+                ),
+              ),
+              // adding space
+              SizedBox(
+                height: 10.0,
+              ),
+              Text(
+                'Pasig City',
+                style: TextStyle(
+                  color: Colors.white,
+                  letterSpacing: 2.0,
+                  fontSize: 28.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+
+              SizedBox(
+                height: 30.0,
+              ),
+
+              Row(
                 children: <Widget>[
-                  Container(
-                    child: Text('thirdy'),
+                  Icon(
+                    Icons.email,
+                    color: Colors.grey[400],
                   ),
-                  Container(
-                    child: Text('jose'),
+                  SizedBox(
+                    width: 10.0,
                   ),
+                  Text(
+                    'gayaresthirdy@gmail.com',
+                    style: TextStyle(
+                      color: Colors.grey[400],
+                      fontSize: 18.0,
+                      letterSpacing: 1.0,
+                    ),
+                  )
                 ],
               ),
-            ),
-          ),
-          Expanded(
-            flex: 2,
-            child: Container(
-              padding: EdgeInsets.all(30.0),
-              color: Colors.yellow,
-              child: Text('2'),
-            ),
-          ),
-          Expanded(
-            flex: 1,
-            child: Container(
-              padding: EdgeInsets.all(30.0),
-              color: Colors.red,
-              child: Text('3'),
-            ),
-          ),
-        ],
-      ),
-
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Text('click'),
-        backgroundColor: Color.fromARGB(255, 244, 67, 54),
-      ),
+            ],
+          )),
     );
   }
 }
