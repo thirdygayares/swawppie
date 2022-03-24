@@ -9,8 +9,24 @@ class ChooseLocation extends StatefulWidget {
 
 class _ChooseLocationState extends State<ChooseLocation> {
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    print('iniState function ran');
+  }
+
+  @override
   Widget build(BuildContext context) {
+    print('build function ran');
+
     return Scaffold(
+      backgroundColor: Colors.grey[200],
+      appBar: AppBar(
+        backgroundColor: Colors.blue[900],
+        title: Text('Choose a Location'),
+        centerTitle: false,
+        elevation: 0,
+      ),
       body: Text('Choose Location'),
     );
   }
