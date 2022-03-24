@@ -8,7 +8,7 @@ import 'package:swawppie/pages/home.dart';
 void main() => runApp(MaterialApp(
       //creating routes
       //to first route
-      initialRoute: '/home',
+      initialRoute: '/',
       routes: {
         '/': (context) => Loading(),
         '/home': (context) => Home(),
