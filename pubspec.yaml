@@ -65,7 +65,10 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
    - images/
- 
+   - images/kenya.png
+   - images/uk.png
+   - images/usa.png
+
 
    
 
